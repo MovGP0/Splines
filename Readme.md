@@ -4,6 +4,12 @@ This library provides a set of classes to work with splines.
 
 There are also helper types to aid with geometric calculations.
 
+## Credits
+
+This library is based on the [Mathfs library](https://github.com/FreyaHolmer/Mathfs) by [Freya Holmer](https://github.com/FreyaHolmer/).
+
+The main difference is that this library is more complete and has no dependency on [Unity](https://dotnet.microsoft.com/en-us/apps/games/unity).
+
 ## Dimensions
 
 The types are available in 1D to 4D versions:
