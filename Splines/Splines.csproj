@@ -1,0 +1,579 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Nullable>enable</Nullable>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWpf>true</UseWpf>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="JetBrains.Annotations" Version="2023.3.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="8.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Roslynator.Analyzers" Version="4.12.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Roslynator.Formatting.Analyzers" Version="4.12.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="NetEscapades.EnumGenerators" Version="1.0.0-beta09">
+      <PrivateAssets>all</PrivateAssets>
+      <ExcludeAssets>runtime</ExcludeAssets>
+    </PackageReference>
+    <PackageReference Include="System.Numerics.Vectors" Version="4.5.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Geometry\Splines\Splines\UniformSplineSegments\BezierCubic2D.Equatable.cs">
+      <DependentUpon>BezierCubic2D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\Splines\UniformSplineSegments\BezierCubic1D.Equatable.cs">
+      <DependentUpon>BezierCubic1D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\Splines\UniformSplineSegments\BezierCubic3D.Equatable.cs">
+      <DependentUpon>BezierCubic3D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\Splines\UniformSplineSegments\BezierCubic4D.Equatable.cs">
+      <DependentUpon>BezierCubic4D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\Splines\UniformSplineSegments\BezierQuad1D.Equatable.cs">
+      <DependentUpon>BezierQuad1D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\Splines\UniformSplineSegments\BezierQuad2D.Equatable.cs">
+      <DependentUpon>BezierQuad2D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\Splines\UniformSplineSegments\BezierQuad3D.Equatable.cs">
+      <DependentUpon>BezierQuad3D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\Splines\UniformSplineSegments\BezierQuad4D.Equatable.cs">
+      <DependentUpon>BezierQuad4D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\Splines\UniformSplineSegments\CatRomCubic1D.Equatable.cs">
+      <DependentUpon>CatRomCubic1D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\Splines\UniformSplineSegments\CatRomCubic2D.Equatable.cs">
+      <DependentUpon>CatRomCubic2D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\Splines\UniformSplineSegments\CatRomCubic3D.Equatable.cs">
+      <DependentUpon>CatRomCubic3D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\Splines\UniformSplineSegments\CatRomCubic4D.Equatable.cs">
+      <DependentUpon>CatRomCubic4D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\Splines\UniformSplineSegments\HermiteCubic1D.Equatable.cs">
+      <DependentUpon>HermiteCubic1D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\Splines\UniformSplineSegments\HermiteCubic2D.Equatable.cs">
+      <DependentUpon>HermiteCubic2D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\Splines\UniformSplineSegments\HermiteCubic3D.Equatable.cs">
+      <DependentUpon>HermiteCubic3D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\Splines\UniformSplineSegments\HermiteCubic4D.Equatable.cs">
+      <DependentUpon>HermiteCubic4D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\Splines\UniformSplineSegments\UBSCubic1D.Equatable.cs">
+      <DependentUpon>UBSCubic1D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\Splines\UniformSplineSegments\UBSCubic2D.Equatable.cs">
+      <DependentUpon>UBSCubic2D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\Splines\UniformSplineSegments\UBSCubic3D.Equatable.cs">
+      <DependentUpon>UBSCubic3D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\Splines\UniformSplineSegments\UBSCubic4D.Equatable.cs">
+      <DependentUpon>UBSCubic4D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\Splines\UniformSplineSegments\Bezier2D.Equatable.cs">
+      <DependentUpon>Bezier2D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\Splines\UniformSplineSegments\Bezier3D.Equatable.cs">
+      <DependentUpon>Bezier3D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\Splines\UniformSplineSegments\Bezier4D.Equatable.cs">
+      <DependentUpon>Bezier4D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\Splines\UniformSplineSegments\Bezier1D.Equatable.cs">
+      <DependentUpon>Bezier1D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\Curves\Arc2D.Equatable.cs">
+      <DependentUpon>Arc2D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\GeometricShapes\Transform2D.Equatable.cs">
+      <DependentUpon>Transform2D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\GeometricShapes\Transform3D.Equatable.cs">
+      <DependentUpon>Transform3D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\GeometricShapes\Triangle3D.Equatable.cs">
+      <DependentUpon>Triangle3D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\GeometricShapes\Triangle2D.Equatable.cs">
+      <DependentUpon>Triangle2D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\GeometricShapes\Ray3D.Equatable.cs">
+      <DependentUpon>Ray3D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\GeometricShapes\Ray3D.Formattable.cs">
+      <DependentUpon>Ray3D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\GeometricShapes\Ray2D.Formattable.cs">
+      <DependentUpon>Ray2D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\GeometricShapes\Ray2D.Equatable.cs">
+      <DependentUpon>Ray2D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\Curves\Arc3D.Equatable.cs">
+      <DependentUpon>Arc3D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\Curves\Trajectory1D.Equatable.cs">
+      <DependentUpon>Trajectory1D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\Curves\Trajectory2D.Equatable.cs">
+      <DependentUpon>Trajectory2D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\Curves\Trajectory3D.Equatable.cs">
+      <DependentUpon>Trajectory3D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\Curves\Trajectory4D.Equatable.cs">
+      <DependentUpon>Trajectory4D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\Curves\Catenary3D.Equatable.cs">
+      <DependentUpon>Catenary3D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\Curves\Catenary2D.Equatable.cs">
+      <DependentUpon>Catenary2D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\GeometricShapes\Plane3DIn4D.Equatable.cs">
+      <DependentUpon>Plane3DIn4D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\GeometricShapes\Plane2DIn3D.Equatable.cs">
+      <DependentUpon>Plane2DIn3D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\Curves\Catenary4D.Equatable.cs">
+      <DependentUpon>Catenary4D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\GeometricShapes\Ray4D.Formattable.cs">
+      <DependentUpon>Ray4D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\GeometricShapes\Ray4D.Equatable.cs">
+      <DependentUpon>Ray4D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\GeometricShapes\Ray1D.Equatable.cs">
+      <DependentUpon>Ray1D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\GeometricShapes\Ray1D.Formattable.cs">
+      <DependentUpon>Ray1D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\GeometricShapes\Circle3D.Equatable.cs">
+      <DependentUpon>Circle3D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\GeometricShapes\Circle2D.Equatable.cs">
+      <DependentUpon>Circle2D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\GeometricShapes\Box3D.Equatable.cs">
+      <DependentUpon>Box3D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\GeometricShapes\Box2D.Equatable.cs">
+      <DependentUpon>Box2D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\GeometricAlgebra\Bivector2.Equatable.cs">
+      <DependentUpon>Bivector2.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\GeometricAlgebra\Bivector3.Equatable.cs">
+      <DependentUpon>Bivector3.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\GeometricAlgebra\Rotor3.Equatable.cs">
+      <DependentUpon>Rotor3.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\GeometricAlgebra\Trivector3.Equatable.cs">
+      <DependentUpon>Trivector3.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\GeometricAlgebra\Multivector3.Equatable.cs">
+      <DependentUpon>Multivector3.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\GeometricAlgebra\Multivector2.Equatable.cs">
+      <DependentUpon>Multivector2.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\GeometricAlgebra\Rotor2.Equatable.cs">
+      <DependentUpon>Rotor2.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\Splines\MultiSegmentSplines\NURBS2D.Equatable.cs">
+      <DependentUpon>NURBS2D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\Splines\MultiSegmentSplines\NURBS3D.Equatable.cs">
+      <DependentUpon>NURBS3D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\Splines\MultiSegmentSplines\NURBS4D.Equatable.cs">
+      <DependentUpon>NURBS4D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\Splines\MultiSegmentSplines\NURBS1D.Equatable.cs">
+      <DependentUpon>NURBS1D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\Splines\MultiSegmentSplines\Node3.Equatable.cs">
+      <DependentUpon>Node3.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\Splines\MultiSegmentSplines\Node2.Equatable.cs">
+      <DependentUpon>Node2.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\Splines\MultiSegmentSplines\Node4.Equatable.cs">
+      <DependentUpon>Node4.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\Splines\MultiSegmentSplines\CatRom2DSpline.Equatable.cs">
+      <DependentUpon>CatRom2DSpline.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\Splines\MultiSegmentSplines\CatRom3DSpline.Equatable.cs">
+      <DependentUpon>CatRom3DSpline.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\Splines\MultiSegmentSplines\CatRom1DSpline.Equatable.cs">
+      <DependentUpon>CatRom1DSpline.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\Splines\MultiSegmentSplines\CatRom4DSpline.Equatable.cs">
+      <DependentUpon>CatRom4DSpline.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\Splines\MultiSegmentSplines\Node1.Equatable.cs">
+      <DependentUpon>Node1.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\GeometricAlgebra\Multivector4.Properties.cs">
+      <DependentUpon>Multivector4.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\GeometricAlgebra\Multivector4.Operators.cs">
+      <DependentUpon>Multivector4.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\GeometricAlgebra\Quadvector4.Operators.cs">
+      <DependentUpon>Quadvector4.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\GeometricAlgebra\Rotor4.Operators.cs">
+      <DependentUpon>Rotor4.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\GeometricAlgebra\Rotor4.Equatable.cs">
+      <DependentUpon>Rotor4.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\GeometricAlgebra\Trivector4.Equatable.cs">
+      <DependentUpon>Trivector4.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\GeometricAlgebra\Trivector4.Operators.cs">
+      <DependentUpon>Trivector4.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\GeometricAlgebra\Bivector4.Equatable.cs">
+      <DependentUpon>Bivector4.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\GeometricAlgebra\Bivector4.Operators.cs">
+      <DependentUpon>Bivector4.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\GeometricAlgebra\Trivector3.Operators.cs">
+      <DependentUpon>Trivector3.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\GeometricAlgebra\Rotor3.Operators.cs">
+      <DependentUpon>Rotor3.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\GeometricAlgebra\Rotor2.Operators.cs">
+      <DependentUpon>Rotor2.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\Numerics\ComplexMatrix2x2.Equatable.cs">
+      <DependentUpon>ComplexMatrix2x2.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\Numerics\ComplexMatrix2x2.Operators.cs">
+      <DependentUpon>ComplexMatrix2x2.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Geometry\Splines\Numerics\ComplexMatrix3x3.Equatable.cs">
+      <DependentUpon>ComplexMatrix3x3.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Statistics.Double.cs">
+      <DependentUpon>Statistics.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Statistics.Float.cs">
+      <DependentUpon>Statistics.cs</DependentUpon>
+    </Compile>
+    <Compile Update="GeometricShapes\Ray1D.Equatable.cs">
+      <DependentUpon>Ray1D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="GeometricShapes\Ray1D.Formattable.cs">
+      <DependentUpon>Ray1D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="GeometricShapes\Ray2D.Equatable.cs">
+      <DependentUpon>Ray2D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="GeometricShapes\Ray2D.Formattable.cs">
+      <DependentUpon>Ray2D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="GeometricShapes\Ray3D.Equatable.cs">
+      <DependentUpon>Ray3D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="GeometricShapes\Ray3D.Formattable.cs">
+      <DependentUpon>Ray3D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="GeometricShapes\Ray4D.Equatable.cs">
+      <DependentUpon>Ray4D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="GeometricShapes\Ray4D.Formattable.cs">
+      <DependentUpon>Ray4D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="GeometricShapes\Transform2D.Equatable.cs">
+      <DependentUpon>Transform2D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="GeometricShapes\Transform3D.Equatable.cs">
+      <DependentUpon>Transform3D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="GeometricShapes\Triangle2D.Equatable.cs">
+      <DependentUpon>Triangle2D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="GeometricShapes\Triangle3D.Equatable.cs">
+      <DependentUpon>Triangle3D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="GeometricShapes\Plane3DIn4D.Equatable.cs">
+      <DependentUpon>Plane3DIn4D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="GeometricShapes\Plane2DIn3D.Equatable.cs">
+      <DependentUpon>Plane2DIn3D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="GeometricShapes\Circle3D.Equatable.cs">
+      <DependentUpon>Circle3D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="GeometricShapes\Circle2D.Equatable.cs">
+      <DependentUpon>Circle2D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="GeometricShapes\Box3D.Equatable.cs">
+      <DependentUpon>Box3D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="GeometricShapes\Box2D.Equatable.cs">
+      <DependentUpon>Box2D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="GeometricAlgebra\Rotor2.Operators.cs">
+      <DependentUpon>Rotor2.cs</DependentUpon>
+    </Compile>
+    <Compile Update="GeometricAlgebra\Rotor2.Equatable.cs">
+      <DependentUpon>Rotor2.cs</DependentUpon>
+    </Compile>
+    <Compile Update="GeometricAlgebra\Rotor3.Equatable.cs">
+      <DependentUpon>Rotor3.cs</DependentUpon>
+    </Compile>
+    <Compile Update="GeometricAlgebra\Rotor3.Operators.cs">
+      <DependentUpon>Rotor3.cs</DependentUpon>
+    </Compile>
+    <Compile Update="GeometricAlgebra\Rotor4.Operators.cs">
+      <DependentUpon>Rotor4.cs</DependentUpon>
+    </Compile>
+    <Compile Update="GeometricAlgebra\Rotor4.Equatable.cs">
+      <DependentUpon>Rotor4.cs</DependentUpon>
+    </Compile>
+    <Compile Update="GeometricAlgebra\Trivector3.Equatable.cs">
+      <DependentUpon>Trivector3.cs</DependentUpon>
+    </Compile>
+    <Compile Update="GeometricAlgebra\Trivector3.Operators.cs">
+      <DependentUpon>Trivector3.cs</DependentUpon>
+    </Compile>
+    <Compile Update="GeometricAlgebra\Trivector4.Equatable.cs">
+      <DependentUpon>Trivector4.cs</DependentUpon>
+    </Compile>
+    <Compile Update="GeometricAlgebra\Trivector4.Operators.cs">
+      <DependentUpon>Trivector4.cs</DependentUpon>
+    </Compile>
+    <Compile Update="GeometricAlgebra\Quadvector4.Operators.cs">
+      <DependentUpon>Quadvector4.cs</DependentUpon>
+    </Compile>
+    <Compile Update="GeometricAlgebra\Multivector4.Properties.cs">
+      <DependentUpon>Multivector4.cs</DependentUpon>
+    </Compile>
+    <Compile Update="GeometricAlgebra\Multivector4.Operators.cs">
+      <DependentUpon>Multivector4.cs</DependentUpon>
+    </Compile>
+    <Compile Update="GeometricAlgebra\Multivector3.Equatable.cs">
+      <DependentUpon>Multivector3.cs</DependentUpon>
+    </Compile>
+    <Compile Update="GeometricAlgebra\Multivector2.Equatable.cs">
+      <DependentUpon>Multivector2.cs</DependentUpon>
+    </Compile>
+    <Compile Update="GeometricAlgebra\Bivector4.Operators.cs">
+      <DependentUpon>Bivector4.cs</DependentUpon>
+    </Compile>
+    <Compile Update="GeometricAlgebra\Bivector4.Equatable.cs">
+      <DependentUpon>Bivector4.cs</DependentUpon>
+    </Compile>
+    <Compile Update="GeometricAlgebra\Bivector3.Equatable.cs">
+      <DependentUpon>Bivector3.cs</DependentUpon>
+    </Compile>
+    <Compile Update="GeometricAlgebra\Bivector2.Equatable.cs">
+      <DependentUpon>Bivector2.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Splines\Curves\Arc2D.Equatable.cs">
+      <DependentUpon>Arc2D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Splines\Curves\Arc3D.Equatable.cs">
+      <DependentUpon>Arc3D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Splines\Curves\Catenary2D.Equatable.cs">
+      <DependentUpon>Catenary2D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Splines\Curves\Catenary3D.Equatable.cs">
+      <DependentUpon>Catenary3D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Splines\Curves\Catenary4D.Equatable.cs">
+      <DependentUpon>Catenary4D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Splines\Curves\Trajectory1D.Equatable.cs">
+      <DependentUpon>Trajectory1D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Splines\Curves\Trajectory2D.Equatable.cs">
+      <DependentUpon>Trajectory2D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Splines\Curves\Trajectory3D.Equatable.cs">
+      <DependentUpon>Trajectory3D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Splines\Curves\Trajectory4D.Equatable.cs">
+      <DependentUpon>Trajectory4D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Splines\Splines\MultiSegmentSplines\CatRom1DSpline.Equatable.cs">
+      <DependentUpon>CatRom1DSpline.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Splines\Splines\MultiSegmentSplines\CatRom2DSpline.Equatable.cs">
+      <DependentUpon>CatRom2DSpline.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Splines\Splines\MultiSegmentSplines\CatRom3DSpline.Equatable.cs">
+      <DependentUpon>CatRom3DSpline.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Splines\Splines\MultiSegmentSplines\CatRom4DSpline.Equatable.cs">
+      <DependentUpon>CatRom4DSpline.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Splines\Splines\MultiSegmentSplines\Node1.Equatable.cs">
+      <DependentUpon>Node1.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Splines\Splines\MultiSegmentSplines\Node2.Equatable.cs">
+      <DependentUpon>Node2.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Splines\Splines\MultiSegmentSplines\Node3.Equatable.cs">
+      <DependentUpon>Node3.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Splines\Splines\MultiSegmentSplines\Node4.Equatable.cs">
+      <DependentUpon>Node4.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Splines\Splines\MultiSegmentSplines\NURBS1D.Equatable.cs">
+      <DependentUpon>NURBS1D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Splines\Splines\MultiSegmentSplines\NURBS2D.Equatable.cs">
+      <DependentUpon>NURBS2D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Splines\Splines\MultiSegmentSplines\NURBS3D.Equatable.cs">
+      <DependentUpon>NURBS3D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Splines\Splines\MultiSegmentSplines\NURBS4D.Equatable.cs">
+      <DependentUpon>NURBS4D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Splines\Splines\UniformSplineSegments\Bezier1D.Equatable.cs">
+      <DependentUpon>Bezier1D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Splines\Splines\UniformSplineSegments\Bezier2D.Equatable.cs">
+      <DependentUpon>Bezier2D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Splines\Splines\UniformSplineSegments\Bezier3D.Equatable.cs">
+      <DependentUpon>Bezier3D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Splines\Splines\UniformSplineSegments\Bezier4D.Equatable.cs">
+      <DependentUpon>Bezier4D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Splines\Splines\UniformSplineSegments\BezierCubic1D.Equatable.cs">
+      <DependentUpon>BezierCubic1D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Splines\Splines\UniformSplineSegments\BezierCubic2D.Equatable.cs">
+      <DependentUpon>BezierCubic2D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Splines\Splines\UniformSplineSegments\BezierCubic3D.Equatable.cs">
+      <DependentUpon>BezierCubic3D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Splines\Splines\UniformSplineSegments\BezierCubic4D.Equatable.cs">
+      <DependentUpon>BezierCubic4D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Splines\Splines\UniformSplineSegments\BezierQuad1D.Equatable.cs">
+      <DependentUpon>BezierQuad1D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Splines\Splines\UniformSplineSegments\BezierQuad2D.Equatable.cs">
+      <DependentUpon>BezierQuad2D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Splines\Splines\UniformSplineSegments\BezierQuad3D.Equatable.cs">
+      <DependentUpon>BezierQuad3D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Splines\Splines\UniformSplineSegments\BezierQuad4D.Equatable.cs">
+      <DependentUpon>BezierQuad4D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Splines\Splines\UniformSplineSegments\CatRomCubic1D.Equatable.cs">
+      <DependentUpon>CatRomCubic1D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Splines\Splines\UniformSplineSegments\CatRomCubic2D.Equatable.cs">
+      <DependentUpon>CatRomCubic2D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Splines\Splines\UniformSplineSegments\CatRomCubic3D.Equatable.cs">
+      <DependentUpon>CatRomCubic3D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Splines\Splines\UniformSplineSegments\CatRomCubic4D.Equatable.cs">
+      <DependentUpon>CatRomCubic4D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Splines\Splines\UniformSplineSegments\HermiteCubic1D.Equatable.cs">
+      <DependentUpon>HermiteCubic1D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Splines\Splines\UniformSplineSegments\HermiteCubic2D.Equatable.cs">
+      <DependentUpon>HermiteCubic2D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Splines\Splines\UniformSplineSegments\HermiteCubic3D.Equatable.cs">
+      <DependentUpon>HermiteCubic3D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Splines\Splines\UniformSplineSegments\HermiteCubic4D.Equatable.cs">
+      <DependentUpon>HermiteCubic4D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Splines\Splines\UniformSplineSegments\UBSCubic1D.Equatable.cs">
+      <DependentUpon>UBSCubic1D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Splines\Splines\UniformSplineSegments\UBSCubic2D.Equatable.cs">
+      <DependentUpon>UBSCubic2D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Splines\Splines\UniformSplineSegments\UBSCubic3D.Equatable.cs">
+      <DependentUpon>UBSCubic3D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Splines\Splines\UniformSplineSegments\UBSCubic4D.Equatable.cs">
+      <DependentUpon>UBSCubic4D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Curves\Spring1D.Equatable.cs">
+      <DependentUpon>Spring1D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Curves\Spring2D.Equatable.cs">
+      <DependentUpon>Spring2D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Curves\Trajectory1D.Equatable.cs">
+      <DependentUpon>Trajectory1D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Curves\Trajectory2D.Equatable.cs">
+      <DependentUpon>Trajectory2D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Curves\Trajectory3D.Equatable.cs">
+      <DependentUpon>Trajectory3D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Curves\Trajectory4D.Equatable.cs">
+      <DependentUpon>Trajectory4D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Curves\Catenary4D.Equatable.cs">
+      <DependentUpon>Catenary4D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Curves\Catenary3D.Equatable.cs">
+      <DependentUpon>Catenary3D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Curves\Catenary2D.Equatable.cs">
+      <DependentUpon>Catenary2D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Curves\Arc3D.Equatable.cs">
+      <DependentUpon>Arc3D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Curves\Arc2D.Equatable.cs">
+      <DependentUpon>Arc2D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Curves\Spring3D.Equatable.cs">
+      <DependentUpon>Spring3D.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Curves\Spring4D.Equatable.cs">
+      <DependentUpon>Spring4D.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="*.csproj.DotSettings" />
+  </ItemGroup>
+</Project>
