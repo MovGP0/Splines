@@ -1,0 +1,4 @@
+﻿<Solution>
+  <Project Path="Splines.Tests\Splines.Tests.csproj" />
+  <Project Path="Splines\Splines.csproj" />
+</Solution>
